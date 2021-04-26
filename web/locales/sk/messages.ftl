@@ -33,6 +33,7 @@ as = asámčina
 ast = astúrčina
 az = azerbajdžančina
 ba = baškirčina
+bas = basaa
 be = bieloruština
 bg = bulharčina
 bm = bambarčina
@@ -71,6 +72,7 @@ he = hebrejčina
 hi = hindčina
 hr = chorvátčina
 hsb = hornolužická srbčina
+ht = haitská kreolčina
 hu = maďarčina
 hy-AM = arménčina
 hyw = západná arménčina
@@ -85,6 +87,7 @@ kaa = karakalpačtina
 kab = kabylčina
 kbd = kabardčina
 kk = kazaština
+kmr = kurmanji kurdčina
 ko = kórejčina
 kpv = komi-zyriančina
 kw = kornčina
@@ -93,13 +96,17 @@ lg = gandčina
 lij = ligúrčina
 lt = litovčina
 lv = lotyština
+mai = maithilčina
 mdf = mokša
 mg = malagaština
 mhr = lúčnovýchodná marijčina
 mk = macedónčina
 ml = malajálamčina
 mn = mongolčina
+mos = mossi
+mr = maráthčina
 mrj = hornomarijská marijčina
+ms = malajčina
 mt = maltčina
 my = barmčina
 myv = erzya
@@ -111,6 +118,7 @@ oc = okcitánčina
 or = urijčina
 pa-IN = pandžábčina
 pl = poľština
+ps = paštčina
 pt = portugalčina
 rm-sursilv = rétorománčina (sursilvan)
 rm-vallader = rétorománčina (vallader)
@@ -120,9 +128,11 @@ rw = rwandčina
 sah = jakutčina
 sc = sardínčina
 scn = sicílčina
+shi = shilha
 si = sinhalčina
 sk = slovenčina
 sl = slovinčina
+so = somálčina
 sq = albánčina
 sr = srbčina
 sv-SE = švédčina
@@ -254,6 +264,7 @@ whats-public = Čo všetko zverejňujeme?
 email-not-public = Vašu e-mailovú adresu nezverejňujeme.
 recordings-and-locale-public = Počet nahrávok a jazyky, do ktorých prispievate, budú verejné.
 username-optin-public = Môžete si vybrať, či bude vaše používateľské meno verejné alebo anonymné.
+demographic-deidentified-clarity-2 = Dobrovoľne odosielané demografické dáta (napr. vek, pohlavie, jazyk a prízvuk) nebudú na vašom profile nikdy sprístupnené verejne, a v datasete nebudú spárované s vašim účtom. Individuálne zvukové nahrávky budú asociované s demografickými údajmi za účelom presnejšej analýzy - napríklad, výskumník môže chcieť cieliť trénovanie modelu na špecifickú demografickú skupinu.
 username-email-not-demographic = Vaše používateľské meno a e-mailová adresa nebudú nijakým spôsobom prepojené s uverejnenými údajmi.
 
 ## Speak & Listen Shortcuts
@@ -283,6 +294,7 @@ shortcut-record-toggle-label = Nahrať/zastaviť
 shortcut-rerecord-toggle = [1-5]
 shortcut-rerecord-toggle-label = Nahrať klip nanovo
 request-language-text = Nevidíte na Common Voice svoj jazyk?
+request-language-text-learn = Tu sa dozviete, ako o to požiadať.
 request-language-button = Požiadajte o jazyk
 
 ## ProjectStatus
@@ -312,6 +324,8 @@ profile-form-accent =
     .label = Prízvuk
 profile-form-age =
     .label = Vek
+profile-form-gender-2 =
+    .label = Pohlavie
 leaderboard-visibility =
     .label = Viditeľnosť v rebríčku
 hidden = Skrytý
@@ -426,6 +440,7 @@ faq-search-for-answers =
 ## ABOUT US
 
 about-title = Prečo Common Voice?
+about-subtitle = Common Voice je súčasťou iniciatívy Mozilly pomôcť učiť stroje, ako hovoria skutoční ľudia. Okrem datasetu Common Voice budujeme aj open source engine na rozpoznávanie reči s názvom Deep Speech.
 how-does-it-work-title = Ako to funguje?
 about-is-it-valid = Je nahrávka platná?
 about-is-it-valid-text = Nahrávka je označená ako platná po jej schválení iným používateľom
@@ -631,18 +646,23 @@ target-segment-learn-more = Ďalšie informácie
 
 ## Reporting
 
+report-title = Odoslať správu
+report-ask = Aké máte problémy s touto vetou?
+report-offensive-language = Urážlivý jazyk
 report-offensive-language-detail = Veta obsahuje urážky alebo nadávky.
 report-grammar-or-spelling = Gramatická chyba
 report-grammar-or-spelling-detail = Vo vete sa nachádza gramatická chyba alebo preklep.
 report-different-language = Iný jazyk
 report-different-language-detail = Je napísaná v inom jazyku, než aký mám nastavený.
 report-difficult-pronounce = Zložitá výslovnosť
+report-difficult-pronounce-detail = Obsahuje slová alebo frázy, ktoré sú ťažko čitateľné alebo vysloviteľné.
 report-offensive-speech = Urážky
 report-offensive-speech-detail = Nahrávka obsahuje urážky alebo nadávky.
 report-other-comment =
     .placeholder = Komentár
 success = Hotovo
 continue = Pokračovať
+report-success = Správa bola úspešne odoslaná!
 
 ## Goals
 

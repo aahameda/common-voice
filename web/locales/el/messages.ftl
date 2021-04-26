@@ -96,6 +96,7 @@ lg = Λουγκάντα
 lij = Λιγουριανά
 lt = Λιθουανικά
 lv = Λετονικά
+mai = Μαϊθίλι
 mdf = Μόκσα
 mg = Μαλαγασικά
 mhr = Ανατολική Μάρι
@@ -116,6 +117,7 @@ nn-NO = Νορβηγικά Nynorsk
 oc = Οξιτανικά
 or = Odia
 pa-IN = Παντζάμπι
+pap-AW = Παπιαμέντο (Αρούμπα)
 pl = Πολωνικά
 ps = Παστού
 pt = Πορτογαλικά
@@ -127,9 +129,11 @@ rw = Κινιαρουάντα
 sah = Σαχά
 sc = Σαρδηνιακά
 scn = Σικελικά
+shi = Σίλα
 si = Σινχαλέζικα
 sk = Σλοβακικά
 sl = Σλοβενικά
+so = Σομαλικά
 sq = Αλβανικά
 sr = Σερβικά
 sv-SE = Σουηδικά
@@ -349,26 +353,19 @@ skip-submission-description = Κατά την υποβολή της συνεισ
 skip-submission-note = Σημείωση: Θα πρέπει ακόμα να επιλέξετε ανάμεσα σε Ομιλία ή Ακρόαση για να αλλάξετε τον τύπο συνεισφοράς.
 off = Ανενεργό
 on = Ενεργό
-avatar-clip-title = Δώστε στο avatar σας φωνή
-change-your-avatar-clip = Θέλετε να αλλάξετε το φωνητικό σας κλιπ;
-recording-in-progress = Η εγγραφή φωνής βρίσκεται σε εξέλιξη
-avatar-clip-recorded = Το avatar σας τώρα περιλαμβάνει ένα φωνητικό κλιπ!
-record-voice-wave = ΕΓΓΡΑΦΗ ΦΩΝΗΣ
-retry-voice-wave-recording = ΕΠΑΝΑΛΗΨΗ
-re-record = ΕΠΑΝΕΓΓΡΑΦΗ
-delete-voice = ΔΙΑΓΡΑΦΗ
-recording-voice-wave = Ηχογράφηση
-delete-voice-clip = ή Διαγραφή φωνητικού κλιπ
-ready-to-upload = Μεταφόρτωση
-avatar-clip-fact = Είναι ένα επιβεβαιωμένο γεγονός ότι ένας αναγνώστης θα αποσπάται από το κείμενο μιας σελίδας όταν εξετάζει τη διάταξη της.
-recreate-voice = Αναδημιουργία του Voicewave
-cancel-avatar-clip-recording = Ακύρωση
-about-avatar-clip-recording = Δημιουργήστε ένα κλιπ ομιλίας ως μέρος του avatar σας. Οι χρήστες θα μπορούν να ακούν το κλιπ σας περνώντας το ποντίκι από πάνω.
+
+## Profile - Email
+
 browse-file-title = Μεταφόρτωση αρχείου εικόνας
 browse-file = Σύρετε και εναποθέστε ή <browseWrap>περιήγηση</browseWrap>
 connect-gravatar = Σύνδεση με Gravatar
 gravatar_not_found = Δεν βρέθηκε gravatar για το email σας
 file_too_large = Το επιλεγμένο αρχείο είναι πολύ μεγάλο
+avatar-uploaded = Μεταφορτώθηκε το avatar
+max-file-size = { $kb }kb μέγιστο
+
+## Profile - Email
+
 manage-subscriptions = Διαχείριση συνδρομών
 manage-email-subscriptions = Διαχείριση συνδρομών email
 email-already-used = Το email χρησιμοποιείται ήδη για διαφορετικό λογαριασμό

@@ -94,6 +94,7 @@ lg = Lugandština
 lij = Ligurština
 lt = Litevština
 lv = Lotyština
+mai = Maithilština
 mdf = Mókša
 mg = Malgaština
 mhr = Lužní Marijština
@@ -127,6 +128,7 @@ scn = Sicilština
 si = Sinhalština
 sk = Slovenština
 sl = Slovinština
+so = Somálština
 sq = Albánština
 sr = Srbština
 sv-SE = Švédština
@@ -141,6 +143,7 @@ tr = Turečtina
 tt = Tatarština
 uby = Ubychština
 udm = Udmurtština
+ug = Ujgurština
 uk = Ukrajinština
 ur = Urdština
 uz = Uzbečtina
@@ -881,6 +884,8 @@ demo-account = Účet
 ## Demo Account
 
 demo-account-card-header = Není nutné mít vytvořený účet, abyste mohli přispívat, ale může být užitečný.
+demo-account-enter-email =
+    .label = Zadejte e-mail, na který zašleme přihlašovací odkaz
 demo-account-sign-up = Pošlete mi přihlaovací odkaz
 
 ## Demo Contribute

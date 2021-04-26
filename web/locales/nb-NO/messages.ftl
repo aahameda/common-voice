@@ -96,6 +96,7 @@ lg = Luganda
 lij = Ligurisk
 lt = Litauisk
 lv = Latvisk
+mai = Maithili
 mdf = Moksja
 mg = Gassisk
 mhr = Østmarisk
@@ -116,6 +117,7 @@ nn-NO = Norsk (nynorsk)
 oc = Oksitansk
 or = Oriya
 pa-IN = Panjabi
+pap-AW = Papiamento (Aruba)
 pl = Polsk
 ps = Pashto
 pt = Portugisisk
@@ -127,6 +129,7 @@ rw = Kinyarwanda
 sah = Jakutisk
 sc = Sardisk
 scn = Siciliansk
+shi = Shilha
 si = Singalesisk
 sk = Slovakisk
 sl = Slovensk
@@ -372,6 +375,7 @@ browse-file = Dra og slipp eller <browseWrap>Browse</browseWrap>
 connect-gravatar = Link til Gravatar
 gravatar_not_found = Ingen gravatar funnet for din e-postadresse
 file_too_large = Den valgte filen er for stor
+avatar-uploaded = Avatar lastet opp
 manage-subscriptions = Endre Abonnement
 manage-email-subscriptions = Rediger e-post innstillinger
 email-already-used = E-postadressen er allerede tilknyttet en annen konto
@@ -792,13 +796,13 @@ activity-needed-calculation-plural =
     { NUMBER($totalHours) ->
         [one] { $totalHours } time
        *[other] { $totalHours } timer
-    }er oppnåelig på drøyt{ NUMBER($periodMonths) ->
+    } er oppnåelig på drøyt { NUMBER($periodMonths) ->
         [one] { $periodMonths } måned
        *[other] { $periodMonths } måneder
-    }hvis{ NUMBER($people) ->
+    } hvis { NUMBER($people) ->
         [one] { $people } person
        *[other] { $people } personer
-    }registrerer{ NUMBER($clipsPerDay) ->
+    } registrerer { NUMBER($clipsPerDay) ->
         [one] { $clipsPerDay } lydklipp
        *[other] { $clipsPerDay } lydklipp
     } om dagen.

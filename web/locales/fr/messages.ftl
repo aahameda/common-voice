@@ -96,6 +96,7 @@ lg = Luganda
 lij = Ligure
 lt = Lituanien
 lv = Letton
+mai = Maïthili
 mdf = Mokcha
 mg = Malgache
 mhr = Mari des prairies
@@ -116,6 +117,7 @@ nn-NO = Norvégien nynorsk
 oc = Occitan
 or = Odia
 pa-IN = Pendjabi
+pap-AW = Papiamento (Aruba)
 pl = Polonais
 ps = Pachto
 pt = Portugais
@@ -127,6 +129,7 @@ rw = Kinyarwanda
 sah = Iakoute
 sc = Sarde
 scn = Sicilien
+shi = Tachelhit/chleuh
 si = Sinhala
 sk = Slovaque
 sl = Slovène
@@ -350,26 +353,19 @@ skip-submission-description = L’envoi de commentaires sera désactivé après 
 skip-submission-note = Remarque : vous devez encore choisir entre Parler et Écouter pour modifier votre type de contribution.
 off = Désactivé
 on = Activé
-avatar-clip-title = Donnez une voix à votre avatar
-change-your-avatar-clip = Voulez-vous changer votre échantillon de voix ?
-recording-in-progress = Enregistrement vocal en cours
-avatar-clip-recorded = Votre avatar comprend maintenant un échantillon de voix !
-record-voice-wave = ENREGISTRER VOTRE PRÉSENTATION
-retry-voice-wave-recording = RÉESSAYER
-re-record = RÉENREGISTRER
-delete-voice = SUPPRIMER
-recording-voice-wave = Enregistrement
-delete-voice-clip = ou Supprimer votre échantillon de voix
-ready-to-upload = ENVOYER
-avatar-clip-fact = C’est un fait établi de longue date qu’un lecteur sera distrait par le contenu lisible d’une page lorsqu’il examinera sa mise en page.
-recreate-voice = Refaire votre présentation
-cancel-avatar-clip-recording = ANNULER
-about-avatar-clip-recording = Enregistrez un extrait vocal pour votre avatar. Les autres personnes pourront écouter votre extrait en passant leur curseur dessus.
+
+## Profile - Email
+
 browse-file-title = Envoyer une image
 browse-file = Glissez-déposez ou bien <browseWrap>Parcourez</browseWrap>
 connect-gravatar = Connectez-vous avec Gravatar
 gravatar_not_found = Impossible de trouver un Gravatar associé à votre adresse électronique
 file_too_large = Le fichier sélectionné est trop volumineux
+avatar-uploaded = Avatar envoyé
+max-file-size = { $kb } ko max
+
+## Profile - Email
+
 manage-subscriptions = Gérer vos abonnements
 manage-email-subscriptions = Gérer les abonnements aux courriels
 email-already-used = Cette adresse électronique est déjà utilisée par un compte différent

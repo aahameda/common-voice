@@ -96,6 +96,7 @@ lg = Luganda
 lij = Ligurieg
 lt = Lithiuanieg
 lv = Latfieg
+mai = Maithili
 mdf = Moksha
 mg = Malagaseg
 mhr = Mari Dwyreiniol
@@ -116,6 +117,7 @@ nn-NO = Norwyeg Nynorsk
 oc = Occitaneg
 or = Odia
 pa-IN = Punjabi
+pap-AW = Papiamento (Aruba)
 pl = Pwyleg
 ps = Pashto
 pt = Portiwgaleg
@@ -127,6 +129,7 @@ rw = Kinyarwanda
 sah = Sakha
 sc = Sardinieg
 scn = Sisilieg
+shi = Shilha
 si = Sinhala
 sk = Slofaceg
 sl = Slofeneg
@@ -366,26 +369,19 @@ skip-submission-description = Wrth gyflwyno cyfraniadau bydd adborth y cael ei h
 skip-submission-note = Sylw: Bydd dal rhaid i chi ddewis rhwng Siarad neu Gwrando i newid y math o gyfraniad.
 off = Diffodd
 on = Ymlaen
-avatar-clip-title = Rhowch lais i'ch afatar
-change-your-avatar-clip = Eisiau newid eich clip llais?
-recording-in-progress = Wrthi'n recordio llais
-avatar-clip-recorded = Mae'ch afatar nawr yn cynnwys clip llais!
-record-voice-wave = RECORDIWCH EICH CYFARCHIAD LLAIS
-retry-voice-wave-recording = CYNNIG ETO
-re-record = AIL RECORDIO
-delete-voice = DILEU
-recording-voice-wave = Recordio
-delete-voice-clip = neu Ddileu clip llais
-ready-to-upload = Llwytho i Fyny
-avatar-clip-fact = Mae'n ffaith hysbys y bydd sylw'r darllenydd yn cael ei ddrysu gan gynnwys darllenadwy tudalen wrth edrych ar ei chynllun.
-recreate-voice = Ail greu'r Cyfarchiad Llais
-cancel-avatar-clip-recording = Diddymu
-about-avatar-clip-recording = Crëwch glip llais fel rhan o'ch afatar proffil. Bydd eraill yn gallu hofran a gwrando ar eich clip.
+
+## Profile - Email
+
 browse-file-title = Llwytho ffeil delwedd
 browse-file = Llusgo a gollwg neu <browseWrap>Bori</browseWrap>
 connect-gravatar = Cysylltu â Gravatar
 gravatar_not_found = Dim gravatar wedi ei ganfod o'ch e-bost
 file_too_large = Mae'r ffeil yma'n rhy fawr
+avatar-uploaded = Llwythwyd yr afatar
+max-file-size = uchafswm o { $kb }kb
+
+## Profile - Email
+
 manage-subscriptions = Rheoli Tanysgrifiadau
 manage-email-subscriptions = Rheoli Tanysgrifiadau E-bost
 email-already-used = Mae'r e-bost yn cael ei ddefnyddio yn barod ar gyfer cyfrif gwahanol

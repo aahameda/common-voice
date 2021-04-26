@@ -96,6 +96,7 @@ lg = 盧干達語
 lij = 利古里亞語
 lt = 立陶宛語
 lv = 拉脫維亞語
+mai = 邁蒂利語
 mdf = 莫克沙語
 mg = 馬拉加西語
 mhr = 草原馬里語
@@ -116,6 +117,7 @@ nn-NO = 挪威語（Nynorsk）
 oc = 奧西坦語
 or = 奧里亞語
 pa-IN = 旁遮普語
+pap-AW = 帕皮亞門托語（阿魯巴）
 pl = 波蘭語
 ps = 普什圖語
 pt = 葡萄牙語
@@ -127,6 +129,7 @@ rw = 盧安達語
 sah = 薩哈語
 sc = 薩丁尼亞語
 scn = 西西里語
+shi = 施盧赫語
 si = 僧加羅語
 sk = 斯洛伐克語
 sl = 斯洛維尼亞語
@@ -346,26 +349,19 @@ skip-submission-description = 貢獻過程中，在點擊「送出」後將忽�
 skip-submission-note = 註: 您仍須要選擇「聽」或「說」來切換貢獻類型。
 off = 關
 on = 開
-avatar-clip-title = 幫您的大頭照錄音
-change-your-avatar-clip = 想要更換錄音片段嗎？
-recording-in-progress = 錄音中
-avatar-clip-recorded = 您的大頭照現在也包含錄音片段了！
-record-voice-wave = 錄下 VOICEWAVE
-retry-voice-wave-recording = 重試
-re-record = 重新錄製
-delete-voice = 刪除
-recording-voice-wave = 錄音中
-delete-voice-clip = 或刪除錄音片段
-ready-to-upload = 上傳
-avatar-clip-fact = 有個我們知道已久的事實是，讀者看著網頁版面時，會被網頁上可閱讀的內容分散注意力。
-recreate-voice = 重新建立 Voicewave
-cancel-avatar-clip-recording = 取消
-about-avatar-clip-recording = 錄下一段語音，作為個人資料的一部分。其他人可以將滑鼠停留在您的顯示圖片上聆聽。
+
+## Profile - Email
+
 browse-file-title = 上傳圖片
 browse-file = 拖曳至此處，或<browseWrap>瀏覽</browseWrap>
 connect-gravatar = 連結 Gravatar
 gravatar_not_found = 找不到您電子郵件信箱的 Gravatar
 file_too_large = 選擇的檔案太大
+avatar-uploaded = 已上傳大頭照
+max-file-size = 最大 { $kb }kb
+
+## Profile - Email
+
 manage-subscriptions = 管理訂閱
 manage-email-subscriptions = 管理電子報訂閱項目
 email-already-used = 電子郵件地址已用於其他帳號

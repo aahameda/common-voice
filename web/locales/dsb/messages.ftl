@@ -96,6 +96,7 @@ lg = Luganda
 lij = Ligurišćina
 lt = Litawšćina
 lv = Letišćina
+mai = Majtilišćina
 mdf = Mokša
 mg = Malagasišćina
 mhr = Łucna marišćina
@@ -116,6 +117,7 @@ nn-NO = Norwegski Nynorsk
 oc = Okcitańšćina
 or = Odiašćina
 pa-IN = Pundžabšćina
+pap-AW = Papiamento (Aruba)
 pl = Pólšćina
 ps = Paštošćina, Pašto
 pt = Portugišćina
@@ -127,6 +129,7 @@ rw = Kinjarwanda
 sah = Sachašćina
 sc = Sardinišćina
 scn = Sicilianišćina
+shi = Tašelhitšćina
 si = Singalezišćina
 sk = Słowakšćina
 sl = Słowjeńšćina
@@ -356,26 +359,19 @@ skip-submission-description = Pśi sobustatkowanju se zapódawański komentar p�
 skip-submission-note = glědajśo: Musyśo hyšći mjazy Powědaś abo Słuchaś wubraś, aby typ sobustatkowanja změnił.
 off = Wušaltowany
 on = Zašaltowany
-avatar-clip-title = Dajśo swójomu awataroju głos
-change-your-avatar-clip = Cośo swój głosowy klip změniś?
-recording-in-progress = Głosowe nagraśe běžy
-avatar-clip-recorded = Waš awatar něnto głosowy klip wopśimujo!
-record-voice-wave = VOICEWAVE NAGRAŚ
-retry-voice-wave-recording = ZNOWEGO WOPYTAŚ
-re-record = ZNOWEGO NAGRAŚ
-delete-voice = WULAŠOWAŚ
-recording-voice-wave = Nagrawa se
-delete-voice-clip = abo wulašujśo głosowy klip
-ready-to-upload = Nagraś
-avatar-clip-fact = Jo južo dłujko znaty fakt, až se cytaŕ wót cytajobnego wopśimjeśa boka wótchyla, gaž se jogo wugótowanje woglědujo.
-recreate-voice = Głosowu žwału znowego napóraś
-cancel-avatar-clip-recording = Pśetergnuś
-about-avatar-clip-recording = Napórajśo głosowy klip ako źěl swójogo profilowego awatara. Druge mógu z myšku pśez njen gibaś a waš klip słuchaś.
+
+## Profile - Email
+
 browse-file-title = Wobrazowu dataju nagraś
 browse-file = Śěgniśo a pušććo abo <browseWrap>pśeglědujśo</browseWrap>
 connect-gravatar = Z gravatarom zwězaś
 gravatar_not_found = Njejo se namakał žeden gravatar za wašu e-mail
 file_too_large = Wubrana dataja jo pśewjelika
+avatar-uploaded = Awatar jo se nagrał
+max-file-size = { $kb } kb maks.
+
+## Profile - Email
+
 manage-subscriptions = Abonementy zastojaś
 manage-email-subscriptions = E-mailowe abonementy zastojaś
 email-already-used = E-mailowa adresa se južo za druge konto wužywa

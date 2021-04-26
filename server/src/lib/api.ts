@@ -79,7 +79,7 @@ export default class API {
     router.patch('/user_client', this.saveAccount);
     router.post(
       '/user_client/avatar/:type',
-      bodyParser.raw({ type: 'image/*' }),
+      bodyParser.raw({ type: 'image/*', limit: '300kb' }),
       this.saveAvatar
     );
     router.post('/user_client/avatar_clip', this.saveAvatarClip);
@@ -256,7 +256,7 @@ export default class API {
   };
 
   saveAvatar = async (
-    { body, headers, params, user }: Request,
+    { body, headers, params, user, client_id }: Request,
     response: Response
   ) => {
     let avatarURL;
@@ -282,15 +282,26 @@ export default class API {
         break;
 
       case 'file':
-        avatarURL =
-          'data:' +
-          headers['content-type'] +
-          ';base64,' +
-          body.toString('base64');
-        console.log(avatarURL.length);
-        if (avatarURL.length > 8000) {
-          error = 'too_large';
-        }
+        // Because avatar files are uploaded as public, this is a nominally
+        // unpredictable prefix to prevent easy guessing of avatar location
+        const prefix = (new Date().getUTCMilliseconds() * Math.random())
+          .toString(36)
+          .slice(-5);
+
+        let fileName = `${client_id}/${prefix}-avatar.jpeg`;
+        await this.s3
+          .upload({
+            Key: fileName,
+            Bucket: getConfig().CLIP_BUCKET_NAME,
+            Body: body,
+            ACL: 'public-read',
+          })
+          .promise();
+
+        avatarURL = this.bucket.getUnsignedUrl(
+          getConfig().CLIP_BUCKET_NAME,
+          fileName
+        );
         break;
 
       default:
@@ -299,7 +310,11 @@ export default class API {
     }
 
     if (!error) {
-      await UserClient.updateAvatarURL(user.emails[0].value, avatarURL);
+      const oldAvatar = await UserClient.updateAvatarURL(
+        user.emails[0].value,
+        avatarURL
+      );
+      if (oldAvatar) await this.bucket.deleteAvatar(client_id, oldAvatar);
     }
 
     response.json(error ? { error } : {});

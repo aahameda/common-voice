@@ -1,16 +1,16 @@
 ## General
 
-yes-receive-emails = Ih, ceyyeɛ-iyi-d imaylen. Bɣiɣ ad iyi-d-ttawḍen yisallen ɣef usenfar n Commen Voice.
+yes-receive-emails = Ih, ceyyeɛ-iyi-d imaylen. Bɣiɣ ad iyi-d-ttawḍen yisallen ɣef usenfaṛ n Commen Voice.
 stayintouch = Nekkni deg Mozilla, nbennu tarbaɛt i ittezzin ɣef tetiknulujit n taɣect. Nebɣa ad neqqim akked umaynut d yileqman, iɣbula n yisefka imaynuten daɣen ad nsell ugar ɣef wamek ara ttwasqedcen isefka-agi.
-privacy-info = Ad neḍmen aḥraz n talɣut-nwen. Ɣer ugar n yisallen deg <privacyLink>tsertit-nneɣ tabaḍnit</privacyLink>.
+privacy-info = Ad neḍmen aḥraz n talɣut-nwen. Ɣaṛ ugar n yisallen deg <privacyLink>tsertit-nneɣ tabaḍnit</privacyLink>.
 return-to-cv = Uɣal ɣer Common Voice
 email-input =
-    .label = Tavrat tiliktronit
+    .label = Imayl
 submit-form-action = Azen
 loading = Asali…
-email-opt-in-info = Bɣiɣ ad d-ṭṭfeɣ imaylen am yismektiyen n yiswan, aswir-iw n umecwar n yileqman akked uɣmis ɣef Common Voice.
+email-opt-in-info = Bɣiɣ ad d-ṭṭfeɣ imaylen am yismektiyen n yiswiyen, anerni-iw deg yileqman akked talɣuyin yeεnan Common Voice.
 email-opt-in-info-title = Jerred deg tebdert n unermes Common Voice
-email-opt-in-info-sub-with-challenge = Ṭṭef imaylen am iznan n timzizliyin akked usmekti n iswiyen, tilḥin deg umahel akked isallen ɣef Common Voice.
+email-opt-in-info-sub-with-challenge = Ṭṭef imaylen am iznan n timzizliyin akked usmekti n iswiyen, anerni n ilqman akked isallen yeεnan Common Voice.
 email-opt-in-privacy-v2 = Ma tferneḍ armas n yimaylen, ad tqebleḍ ad tesseqdec Mozilla talɣut-a akken i d-tettwasegza deg <privacyLink>Tasertit n tbaḍnit n Mozilla</privacyLink>.
 indicates-required = * Yemmal-d urti ilaqen
 not-available-abbreviation = N/A
@@ -96,6 +96,7 @@ lg = Luganda
 lij = Taliguriant
 lt = Talitwaynit
 lv = Talitunit
+mai = Maïthili
 mdf = Mukca
 mg = Tamalgact
 mhr = Tamarit n uzaɣar
@@ -348,26 +349,17 @@ skip-submission-description = Di lawan n utteki, tuzna n tmuɣli-inek ad tettwas
 skip-submission-note = Tazmilt: akken ad tbedleḍ tamahilt n utteki ilaq ad ferneḍ gar Mmeslay akked Timesliwt.
 off = Sens
 on = Rmed
-avatar-clip-title = Efk-as i uvatar-inek taɣect
-change-your-avatar-clip = Tebɣiḍ ad tbedleḍ tasffift n uklip?
-recording-in-progress = Asekles n taɣect iteddu
-avatar-clip-recorded = Iger uvaṭan-innek(m) aklip n taɣect!
-record-voice-wave = SEKLES TAMSEDWALT N TAƔECT
-retry-voice-wave-recording = ƐREḌ I TIKKELT-NNIḌEN
-re-record = ALES-ASEKLES
-delete-voice = KKES
-recording-voice-wave = Asekles
-delete-voice-clip = neɣ kkes aklip n taɣect
-ready-to-upload = Asali
-avatar-clip-fact = Seg zik yettwassen d akken imeɣri ilehhu deg ugbur n tɣuri n usebter ticki yettwali ɣer tneɣruft-is.
-recreate-voice = Ales timerna n temdeswalt n taɣect
-cancel-avatar-clip-recording = Sefsex
-about-avatar-clip-recording = Rnu deg uvataṛ n umaɣnu-ik akalas n taɣect. Wiyaḍ ad izmiren ad srifgen fell-as akken ad slen i usekles-ik.
+
+## Profile - Email
+
 browse-file-title = Sali afaylu n tugna
 browse-file = Zuɣer sakin sers neɣ <browseWrap>innig</browseWrap>
 connect-gravatar = Qqen s Gravatar
 gravatar_not_found = Ulac Gravatar ittwafen i imayl-inek
 file_too_large = Afaylu ittwafernen meqqer aṭas
+
+## Profile - Email
+
 manage-subscriptions = Sefrekajerred
 manage-email-subscriptions = Sefrek ijerriden ɣer yimaylen
 email-already-used = Imayl ittuseqdec yakan i umiḍan nniḍen
