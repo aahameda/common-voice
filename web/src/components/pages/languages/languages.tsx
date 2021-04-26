@@ -325,57 +325,13 @@ class LanguagesPage extends React.PureComponent<Props, State> {
                 : [1, 2, 3].map((n, i) => <LoadingLocalizationBox key={i} />)}
             </ul>
 
-            {!query && (
+            {!query && launched.length > 3 && (
               <Localized
                 id={'languages-show-' + (showAllLaunched ? 'less' : 'more')}>
                 <button
                   disabled={launched.length === 0}
                   className="show-all-languages"
                   onClick={this.toggleShowAllLaunched}
-                />
-              </Localized>
-            )}
-          </section>
-
-          <section className="in-progress">
-            <div className="md-block">
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <h1 style={{ marginRight: '1.5rem' }}>
-                  {getString('language-section-in-progress')}
-                  {inProgressCountLabel}
-                </h1>
-              </div>
-              <Hr />
-            </div>
-
-            <Localized
-              id="language-section-in-progress-new-description"
-              elems={descriptionElems}>
-              <p />
-            </Localized>
-            <ul>
-              {inProgress.length > 0
-                ? (query || showAllInProgress
-                    ? filteredInProgress
-                    : filteredInProgress.slice(0, 3)
-                  ).map((localization, i) => (
-                    <LocalizationBox
-                      key={localization.locale}
-                      localeMessages={localeMessages}
-                      type="in-progress"
-                      {...localization}
-                    />
-                  ))
-                : [1, 2, 3].map(i => <LoadingLocalizationBox key={i} />)}
-            </ul>
-
-            {!query && (
-              <Localized
-                id={'languages-show-' + (showAllInProgress ? 'less' : 'more')}>
-                <button
-                  disabled={inProgress.length === 0}
-                  className="show-all-languages"
-                  onClick={this.toggleShowAllInProgress}
                 />
               </Localized>
             )}

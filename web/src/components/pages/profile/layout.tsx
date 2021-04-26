@@ -19,7 +19,6 @@ import {
   UserPlusIcon,
 } from '../../ui/icons';
 import AvatarSetup from './avatar-setup/avatar-setup';
-import DeleteProfile from './delete/delete';
 import InfoPage from './info/info';
 import Settings from './settings/settings';
 
@@ -73,11 +72,10 @@ interface PropsFromState {
 interface Props extends LocalePropsFromState, PropsFromState {}
 
 const Layout = ({ toLocaleRoute, user }: Props) => {
-  const [infoRoute, avatarRoute, prefRoute, deleteRoute] = [
+  const [infoRoute, avatarRoute, prefRoute] = [
     URLS.PROFILE_INFO,
     URLS.PROFILE_AVATAR,
-    URLS.PROFILE_SETTINGS,
-    URLS.PROFILE_DELETE,
+    URLS.PROFILE_SETTINGS
   ].map(r => toLocaleRoute(r));
   return (
     <div className="profile-layout">
@@ -91,12 +89,7 @@ const Layout = ({ toLocaleRoute, user }: Props) => {
                 : { icon: <UserPlusIcon />, id: 'build-profile' }),
             },
             { route: avatarRoute, icon: <CameraIcon />, id: 'avatar' },
-            { route: prefRoute, icon: <CogIcon />, id: 'settings' },
-            {
-              route: deleteRoute,
-              icon: <TrashIcon />,
-              id: 'profile-form-delete',
-            },
+            { route: prefRoute, icon: <CogIcon />, id: 'settings' }
           ]
             .slice(0, user.account ? Infinity : 1)
             .map(({ route, icon, id }) => (
@@ -107,33 +100,13 @@ const Layout = ({ toLocaleRoute, user }: Props) => {
                 </Localized>
               </NavLink>
             ))}
-          {user.account && (
-            <a onClick={() => downloadData(user.account)} href="#">
-              <CloudIcon />
-              <Localized id="download-profile">
-                <span className="text" />
-              </Localized>
-            </a>
-          )}
         </div>
       </div>
       <div className="content">
         <Switch>
           <Route exact path={infoRoute} component={InfoPage} />
-          {[
-            { route: avatarRoute, Component: AvatarSetup },
-            { route: prefRoute, Component: Settings },
-            { route: deleteRoute, Component: DeleteProfile },
-          ].map(({ route, Component }) => (
-            <Route
-              key={route}
-              exact
-              path={route}
-              render={props =>
-                user.account ? <Component /> : <Redirect to={infoRoute} />
-              }
-            />
-          ))}
+          <Route exact path={avatarRoute} component={AvatarSetup} />
+          <Route exact path={prefRoute} component={Settings} />
           <Route
             render={() => <Redirect to={toLocaleRoute(URLS.PROFILE_INFO)} />}
           />

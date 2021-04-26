@@ -25,26 +25,6 @@ export default React.memo(() => {
   const [locale] = useLocale();
   return (
     <footer>
-      <div id="help-links">
-        <LocaleLink to={URLS.FAQ} onClick={() => trackNav('faq', locale)}>
-          <SupportIcon />
-          <Localized id="faq">
-            <div />
-          </Localized>
-        </LocaleLink>
-        <div className="divider" />
-        <DiscourseLink id="discourse">
-          <DiscourseIcon />
-          <div>Discourse</div>
-        </DiscourseLink>
-        <div className="divider" />
-        <ContactLink>
-          <ContactIcon />
-          <Localized id="contact">
-            <div />
-          </Localized>
-        </ContactLink>
-      </div>
       <div id="moz-links">
         <div className="logo-container">
           <Logo reverse />
@@ -63,39 +43,6 @@ export default React.memo(() => {
               <span />
             </Localized>
           </p>
-        </div>
-        <div className="divider-bottom" />
-        <div className="links">
-          <div>
-            <LocalizedLocaleLink id="privacy" to={URLS.PRIVACY} />
-            <LocalizedLocaleLink id="terms" to={URLS.TERMS} />
-            <Localized id="cookies">
-              <a
-                target="_blank"
-                href="https://www.mozilla.org/en-US/privacy/websites/#cookies"
-                rel="noopener noreferrer"
-              />
-            </Localized>
-          </div>
-          <div className="divider-vertical"/>
-          <div>
-            <LocalizedLocaleLink id="faq" to={URLS.FAQ} />
-            <GitHubLink>GitHub</GitHubLink>
-          </div>
-        </div>
-
-        <div id="sharing">
-          <Localized id="share-title">
-            <span className="title" />
-          </Localized>
-
-          <div className="icons">
-            <ShareButtons />
-          </div>
-        </div>
-
-        <div id="email-subscription">
-          <SubscribeNewsletter />
         </div>
 
         <Localized id="back-top">
