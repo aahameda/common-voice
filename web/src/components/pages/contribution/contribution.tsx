@@ -148,6 +148,15 @@ class ContributionPage extends React.Component<Props, State> {
     );
   }
 
+  constructor(props: Props) {
+    super(props);
+    const { user } = this.props;
+    if (!user.account) {
+      sessionStorage.setItem('redirectURL', location.pathname);
+      window.location.href = '/login';
+    }
+  }
+
   componentDidMount() {
     this.startWaving();
     window.addEventListener('keydown', this.handleKeyDown);

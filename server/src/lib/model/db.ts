@@ -483,8 +483,8 @@ export default class DB {
 
     await this.mysql.query(
       `
-        INSERT INTO user_clients (client_id, auth_token, username)
-        VALUES (?, ?, '')
+        INSERT INTO user_clients (client_id, auth_token, username, visible)
+        VALUES (?, ?, '', 1)
         ON DUPLICATE KEY UPDATE
           auth_token = IF(auth_token IS NULL, VALUES(auth_token), auth_token)
       `,

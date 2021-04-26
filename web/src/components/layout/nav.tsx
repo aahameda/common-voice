@@ -28,11 +28,11 @@ export default ({ children, ...props }: { [key: string]: any }) => (
   <nav {...props} className="nav-list">
     <div className="nav-links">
       <ContributableLocaleLock>
-        <LocalizedNavLink id="contribute" to={URLS.SPEAK} />
+      <LocalizedNavLink id="listen" to={URLS.LISTEN} />
+        <LocalizedNavLink id="speak" to={URLS.SPEAK} />
       </ContributableLocaleLock>
-      <LocalizedNavLink id="datasets" to={URLS.DATASETS} />
+      <LocalizedNavLink id="dashboard" to={URLS.DASHBOARD} />
       <LocalizedNavLink id="languages" to={URLS.LANGUAGES} />
-      <LocalizedNavLink id="about" to={URLS.ABOUT} />
     </div>
     {children}
   </nav>

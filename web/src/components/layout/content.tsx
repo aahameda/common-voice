@@ -45,16 +45,6 @@ export default function Content({ location }: { location: any }) {
           />
           <Route
             exact
-            path={toLocaleRoute(URLS.DATA)}
-            render={() => <Redirect to={toLocaleRoute(URLS.DATASETS)} />}
-          />
-          <Route
-            exact
-            path={toLocaleRoute(URLS.DATASETS)}
-            component={DatasetsPage}
-          />
-          <Route
-            exact
             path={toLocaleRoute('/login-failure')}
             component={LoginFailure}
           />
@@ -76,7 +66,7 @@ export default function Content({ location }: { location: any }) {
             path={toLocaleRoute(URLS.DASHBOARD)}
             component={DashboardPage}
           />
-          {[URLS.CHALLENGE, URLS.STATS, URLS.GOALS, URLS.AWARDS].map(path => (
+          {[URLS.STATS].map(path => (
             <Route
               key={path}
               exact
@@ -93,8 +83,6 @@ export default function Content({ location }: { location: any }) {
               <Redirect to={toLocaleRoute(URLS.DASHBOARD + '/' + URLS.GOALS)} />
             )}
           />
-          <Route exact path={toLocaleRoute(URLS.FAQ)} component={FAQPage} />
-          <Route exact path={toLocaleRoute(URLS.ABOUT)} component={AboutPage} />
           <Route
             exact
             path={toLocaleRoute(URLS.PRIVACY)}
